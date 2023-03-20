@@ -23,6 +23,16 @@
     justify-content: center;
 }
 
+.container{
+    width: 90%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
 /*certifications*/
 
 .certification__container{
@@ -48,14 +58,14 @@
 }
 
 .certification__icon-ct{
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .certification__item-info{
@@ -74,9 +84,52 @@
     font-family: 'Inconsolata', monospace;
 }
 
-a{
+.link{
     text-decoration: none;
     font-weight: 800;
+}
+
+.project__item{
+    width: 80%;
+    padding: 20px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.project__item-dpn{
+    width: 80%;
+    padding: 10px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 1px solid blue;
+}
+
+.project__item-gt{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    gap: 10px;
+    border: 1px solid blue;
+}
+
+.git_link{
+    text-decoration: none;
+}
+
+.ytb-min{
+    width: 560px;
+    height: 315px
+}
+
+.BsGithub{
+    font-size: 30px;
 }
 
 @media screen and (max-width: 740px) {
@@ -103,5 +156,43 @@ a{
 
     .certification__item-info-ttl{
         font-size: 25px;
+    }
+
+    /*PROJECTS*/
+    
+    .ytb-min{
+        width: 360px;
+        height: 203px
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+
+    .ytb-min{
+        width: 260px;
+        height: 147px
+    }
+
+    .project__item-gt{
+        width: 95%;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        gap: 5px;
+        border: 1px solid blue;
+        text-overflow: clip;
+    }
+
+    .project__item{
+        width: 80%;
+        padding: 20px 5px;
+    }
+
+    .BsGithub{
+        font-size: 20px;
     }
 }
