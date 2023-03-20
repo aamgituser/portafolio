@@ -8,7 +8,7 @@ const Projects = () => {
       <h1>Projects</h1>
       <section className='container'>
         <div className='project__item'>
-          <h2>Chat basico en socket io</h2>
+          <span className='ttl'>Chat con socket io</span>
           <div className='project__item-dpn'>
             <SiJavascript/>
             <SiReact/>
@@ -20,7 +20,18 @@ const Projects = () => {
             <a className='git_link' target='_blank' href='https://github.com/aamgituser/socket-chat'>https://github.com/aamgituser/socket-chat</a>
           </div>
         </div>
-        
+        <div className='project__item'>
+          <span className='ttl'>Task CRUD</span>
+          <div className='project__item-dpn'>
+            <SiJavascript/>
+            <SiReact/>
+            <SiSocketdotio/>
+          </div>
+          <div className='project__item-gt'>
+            <BsGithub className='BsGithub' />
+            <a className='git_link' target='_blank' href='https://github.com/aamgituser/socket-chat'>https://github.com/aamgituser/socket-chat</a>
+          </div>
+        </div>
 
 
       </section>

@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&display=swap');
 
+:root{
+    --primary-cl : rgba(255, 255, 255, 0.432);
+    --secondary-cl : rgb(30, 30, 30);
+    --third-cl : rgba(255, 255, 255, 0.507);
+    
+}
+
 .barNav{
     width: 100%;
     height: 7vh;
@@ -48,13 +55,15 @@
 .certification__item{
     width: 80%;
     height: 130px;
-    border: 1px solid red;
+    border: 1px solid var(--primary-cl);
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
     padding: 0 10px;
     border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    color: white;
 }
 
 .certification__icon-ct{
@@ -66,12 +75,12 @@
     justify-content: center;
     border-radius: 50%;
     font-size: 40px;
+    background-color: black;
 }
 
 .certification__item-info{
     height: 90%;
     width: 60%;
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,32 +88,38 @@
     
 }
 
-.certification__item-info-ttl{
+.ttl{
     font-size: 30px;
     font-family: 'Inconsolata', monospace;
+    color: white;
+    font-weight: 500;
 }
 
 .link{
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 500;
+    color: #ff4700;
 }
+
+/*projectos*/
 
 .project__item{
     width: 80%;
     padding: 20px;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
+    background-color: var(--secondary-cl);
+    border-radius: 10px;
+    gap: 20px;
 }
 
 .project__item-dpn{
     width: 80%;
     padding: 10px;
-    font-size: 30px;
+    font-size: 28px;
     display: flex;
     flex-direction: row;
     gap: 20px;
-    border: 1px solid blue;
 }
 
 .project__item-gt{
@@ -116,11 +131,11 @@
     justify-content: center;
     font-size: 18px;
     gap: 10px;
-    border: 1px solid blue;
 }
 
 .git_link{
     text-decoration: none;
+    color: #ff4700;
 }
 
 .ytb-min{
@@ -177,6 +192,7 @@
     .project__item-gt{
         width: 100%;
         padding: 10px 2px;
+        font-size: 13px;
     }
 
     
@@ -187,5 +203,9 @@
 
     .BsGithub{
         font-size: 20px;
+    }
+
+    .project__item-dpn{
+        font-size: 25px;
     }
 }
