@@ -14,11 +14,11 @@ const Projects = () => {
             <SiReact/>
             <SiSocketdotio/>
           </div>
+          <iframe className='ytb-min'  src="https://www.youtube.com/embed/_R_yjcw7pk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <div className='project__item-gt'>
             <BsGithub className='BsGithub' />
             <a className='git_link' target='_blank' href='https://github.com/aamgituser/socket-chat'>https://github.com/aamgituser/socket-chat</a>
           </div>
-          <iframe className='ytb-min'  src="https://www.youtube.com/embed/_R_yjcw7pk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         
 

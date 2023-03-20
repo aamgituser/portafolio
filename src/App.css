@@ -175,20 +175,13 @@
     }
 
     .project__item-gt{
-        width: 95%;
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        font-size: 14px;
-        gap: 5px;
-        border: 1px solid blue;
-        text-overflow: clip;
+        width: 100%;
+        padding: 10px 2px;
     }
 
+    
     .project__item{
-        width: 80%;
+        width: 90%;
         padding: 20px 5px;
     }
 
