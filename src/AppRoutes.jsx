@@ -11,7 +11,7 @@ const AppRoutes = () => {
   return (
     <>
     <nav className='barNav'>
-        <div className='barNav__item'  onClick={()=>{navigate('/')}}>HomeScreen</div>
+        <div className='barNav__item'  onClick={()=>{navigate('/')}}>Home</div>
         <div className='barNav__item'  onClick={()=>{navigate('/projects')}}>Projects</div>
         <div className='barNav__item'  onClick={()=>{navigate('/certifications')}}>Certifications</div>
         <div className='barNav__item'  onClick={()=>{navigate('/contact')}}>Contact</div>
