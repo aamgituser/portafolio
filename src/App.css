@@ -7,7 +7,43 @@
     
 }
 
-/*HOME*/
+/*caracteristicas*/
+
+.titulo__container{
+    display: inline-block;
+}
+
+.titulo{
+    font-family: 'Inconsolata', monospace;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+
+.link{
+    text-decoration: none;
+    
+}
+
 
 .type__container{
     display: inline-block;
@@ -22,23 +58,20 @@
     white-space: nowrap;
     overflow: hidden;
     animation: 
-        typing 2s steps(15),
-        cursor .4s step-end infinite alternate
+    typing 2s steps(15),
+    cursor .4s step-end infinite alternate
     ;
 }
 
 
-
-.titulo__container{
-    display: inline-block;
-}
-
-.titulo{
-    font-family: 'Inconsolata', monospace;
-    border-right: 5px solid;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
+.titulo_home{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    animation: 
+    typing 1s steps(30),
+    cursor .4s step-end infinite alternate
+    ;
 }
 
 .projects{
@@ -68,6 +101,11 @@
     from { width: 0 }
 }
 
+
+
+
+
+
 .barNav{
     width: 100%;
     height: 10vh;
@@ -82,30 +120,27 @@
 
 .barNav__item{
     cursor: pointer;
-
-}
-
-.main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.container{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-    gap: 20px;
-}
-
-
-.link{
-    text-decoration: none;
     
+}
+
+/*HOME*/
+ 
+.main__hero{
+    width: 90%;
+    padding: 20px 0;
+}
+
+.test__container{
+    font-size: 30px;
+    
+}
+
+.int__home{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: 10px;
+    color: #4abdac;
 }
 
 /*certifications*/
@@ -242,8 +277,37 @@
 }
 
 
+@media screen and (max-width: 950px) {
+    
+    .titulo_home{
+        font-size: 28px;
+        letter-spacing: 5px;
+        animation: 
+        typing 1s steps(30),
+        cursor .4s step-end infinite alternate
+        ;
+    }
+
+    .int__home{
+        font-size: 28px;
+        letter-spacing: 5px;
+    }
+}
+
+
 
 @media screen and (max-width: 740px) {
+    
+    .titulo_home{
+        font-size: 28px;
+        letter-spacing: 5px;
+        animation: 
+        typing 1s steps(30),
+        cursor .4s step-end infinite alternate
+        ;
+    }
+
+    
     .barNav{
         gap: 20px;
     }
@@ -276,10 +340,29 @@
         width: 360px;
         height: 203px
     }
+
 }
 
 
 @media screen and (max-width: 580px) {
+
+    .main__hero{
+        width: 95%;
+    }
+
+    .titulo_home{
+        font-size: 22px;
+        letter-spacing: 0.5px;
+        animation: 
+        typing 1s steps(30),
+        cursor .4s step-end infinite alternate
+        ;
+    }
+
+    .int__home{
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
 
     /*projects*/
 
