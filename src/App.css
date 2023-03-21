@@ -215,10 +215,10 @@
 
     /*CERTIFICATIONS*/
     .certification__item{
-        height: 190px;
+        height: 195px;
         width: 85%;
-        gap: 15px;
-        padding: 0 5px;
+        gap: 13px;
+        padding: 0 13px;
     }
 
     .certification__icon-ct{
